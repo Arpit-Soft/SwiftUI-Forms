@@ -54,13 +54,13 @@ struct NightShiftView: View {
                     }
                 }
                 
-                Button(action: {
-                    NavigationLink("Wassup", destination: NotificationView())
-                }, label: {
-                    Text("Move to Notification View")
-                })
+                NavigationLink(destination: NotificationView()) {
+                        Text("Show Notification View")
+                            .foregroundColor(.blue)
+                    }
+                
             }
-            .navigationTitle("Something")
+            .navigationTitle("Night Shift")
         }
     }
 }
